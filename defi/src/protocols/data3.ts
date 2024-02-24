@@ -12314,7 +12314,10 @@ const data3: Protocol[] = [
     module: "lineabank/index.js",
     twitter: "LayerBankFi",
     forkedFrom: ["Compound V2"],
-    oracles: ["Pyth"],
+    oraclesByChain: {
+      manta: ["RedStone"],
+      linea: ["Pyth"]
+    },
     listedAt: 1689773129,
     audit_links: ["https://github.com/peckshield/publications/tree/master/audit_reports/PeckShield-Audit-Report-LineaBank-v1.0.pdf"],
     github: ["layerbank"]
@@ -32622,29 +32625,6 @@ const data3: Protocol[] = [
     oracles: [],
     github: [],
     listedAt: 1708686152
-  },
-  {
-    id: "4164",
-    name: "Mori Protocol",
-    address: null,
-    symbol: "-",
-    url: "https://app.moriprotocol.io/",
-    description:
-      "All-in-one DEX built on VICTION",
-    chain: "TomoChain",
-    logo: `${baseIconsUrl}/mori-protocol.png`,
-    audits: "0",
-    audit_note: null,
-    gecko_id: null,
-    cmcId: null,
-    category: "Dexes",
-    chains: ["TomoChain"],
-    module: "mori/index.js",
-    twitter: "MoriProtocol",
-    forkedFrom: ["Uniswap V3"],
-    oracles: [],
-    github: [],
-    listedAt: 1708713977
   },
 ]
 
